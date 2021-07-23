@@ -1,0 +1,9 @@
+.markdown {
+  padding: 0.5rem 0.2rem;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+
+  > ul > li {
+    margin-left: 22px;
+  }
+}

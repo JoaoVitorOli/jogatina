@@ -1,0 +1,40 @@
+.createdBy {
+  color: rgb(211, 211, 211);
+  font-size: 14px;
+}
+
+.markdown {
+  margin: 2rem 0;
+}
+
+.editButton {
+  padding: 10px 30px;
+  border-radius: 6px;
+  background: #5A50B3;
+  border: 0;
+  font-weight: 700;
+  transition: filter 0.2s;
+  color: rgb(231, 231, 231);
+  margin-top: 3rem;
+  margin-left: auto;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+
+@media (max-width: 425px) {
+  .createdBy {
+    font-size: 12px;
+  }
+
+  .editButton {
+    padding: 8px 15px;
+    font-size: 14px;
+    
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
+

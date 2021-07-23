@@ -1,0 +1,46 @@
+.createdBy {
+  color: rgb(211, 211, 211);
+  font-size: 14px;
+}
+
+.markdown {
+  margin: 2rem 0;
+}
+
+.excludeAndEditReview {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-left: auto;
+
+  button {
+    padding: 10px 30px;
+    border-radius: 6px;
+    border: 0;
+    font-weight: 700;
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+
+  button:nth-child(1) {
+    color: black;
+  }
+
+  button:nth-child(2) {
+    background: rgb(209, 64, 64);
+  }
+}
+
+@media (max-width: 500px) {
+  .excludeAndEditReview {
+    margin: 0 auto;
+
+    button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }
+}

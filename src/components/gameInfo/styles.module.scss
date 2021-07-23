@@ -1,0 +1,95 @@
+.showGameInfo {
+  display: flex;
+  margin: 2rem 0;
+
+  img {
+    margin-right: 1rem;
+    border-radius: 6px;
+  }
+}
+
+.gameDetails {
+  display: flex;
+  flex-direction: column;
+
+  .itemDisplayFlex {
+    display: flex;
+    margin: 10px 0;
+
+    > span, p > span {
+      margin-right: 10px;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    > p {
+      font-size: 15px;
+    }
+
+    > div {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+
+      > span {
+        font-weight: 600;
+        font-size: 1rem;
+      }
+
+      p {
+        background-color: rgb(61, 61, 61);
+        padding: 2px 10px;
+        border-radius: 50px;
+        font-size: 14px;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .showGameInfo {
+    margin: 0;
+    margin-bottom: 1rem;
+  
+    img {
+      margin-right: 1rem;
+      border-radius: 6px;
+      width: 200px;
+    }
+  }
+
+  .gameDetails {
+    .itemDisplayFlex {
+      > div {
+        p {
+          background-color: rgb(61, 61, 61);
+          padding: 2px 10px;
+          border-radius: 50px;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .showGameInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    img {
+      margin-right: 1rem;
+      border-radius: 6px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .showGameInfo {
+    img {
+      width: 100%;
+    }
+  }
+}

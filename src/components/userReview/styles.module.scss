@@ -1,0 +1,85 @@
+.show-game-info {
+  display: flex;
+  margin: 2rem 0;
+
+  img {
+    margin-right: 1rem;
+    border-radius: 6px;
+  }
+}
+
+.markdownHelp {
+  font-size: 14px;
+  color: rgb(173, 173, 173);
+
+  a {
+    color: #9085f0;
+  }
+}
+
+.userInputReview {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  gap: 1.5rem;
+
+  .h3Rating {
+    margin-top: 2rem;
+  }
+}
+
+.previewBackground {
+  background: rgb(61, 61, 61);
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.buttonShowPreview {
+  color: white;
+  width: 180px;
+  padding: 10px 0;
+  background: #5A50B3;
+  border: 0;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+
+@media (max-width: 500px) {
+  .userInputReview {
+    > h3 {
+      font-size: 18px;
+    }
+
+    .markdownHelp {
+      font-size: 12px;
+    }
+  
+    .h3Rating {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .buttonShowPreview {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .ratingDiv {
+    margin: 0 auto;
+
+    > span > span > svg {
+      width: 30px;
+    }
+
+    > span > span {
+      width: 40px !important;
+    }
+  }
+}
