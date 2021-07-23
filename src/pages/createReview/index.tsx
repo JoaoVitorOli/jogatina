@@ -58,7 +58,7 @@ export function CreateReview() {
     setLoading(true);
 
     axios({
-      url: `https://api.igdb.com/v4/games`,
+      url: `https://aqueous-hollows-66552.herokuapp.com/https://api.igdb.com/v4/games`,
       method: 'POST',
       headers: {
           'Accept': 'application/json',
