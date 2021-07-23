@@ -135,7 +135,6 @@ export function CreateReview() {
   function handleSelectGame(game: GamesProps) {
     let bigCover = NoImage;
     let filteredGames = game;
-    console.log(game)
 
     if (game.cover !== undefined) {
       let cover = game.cover.url;

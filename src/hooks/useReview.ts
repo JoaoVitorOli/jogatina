@@ -41,7 +41,6 @@ export function useReview(reviewId: string) {
     ref.on("value", (review) => {
       const reviewDatabase = review.val();
 
-      console.log(reviewDatabase);
       setReviewAndGame(reviewDatabase);
     })
   }, [user.id, reviewId]);

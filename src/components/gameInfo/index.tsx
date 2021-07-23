@@ -21,9 +21,6 @@ interface InfoProps {
 }
 
 function GameInfo(info: InfoProps) {
-  console.log("info")
-  console.log(info.info)
-
   return(
     <div className={styles.showGameInfo}>
       <img src={info.info.cover.url} alt="Capa do jogo" />

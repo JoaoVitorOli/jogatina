@@ -79,7 +79,6 @@ export function Home() {
   
 
   function paginate(data: OnPageActiveProps) {
-    console.log(data.selected);
     setCurrentPage(data.selected);
   }
 

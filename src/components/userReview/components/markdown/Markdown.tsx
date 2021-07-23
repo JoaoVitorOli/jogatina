@@ -8,10 +8,6 @@ interface MarkdownProps {
 }
 
 export function Markdown({ review }: MarkdownProps) {
-  useEffect(() => {
-    console.log(review);
-  }, [review]);
-
   return(
     <ReactMarkdown
       className={styles.markdown}
