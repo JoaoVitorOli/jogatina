@@ -3,7 +3,6 @@ import { useHistory, useParams } from "react-router-dom";
 import { Toaster, toast } from "react-hot-toast";
 
 import GameInfo from "../../components/gameInfo";
-import { Header } from "../../components/header";
 import { UserReview } from "../../components/userReview";
 import { AuthenticationContext } from "../../context/AuthentionContext";
 

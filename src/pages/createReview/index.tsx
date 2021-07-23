@@ -5,7 +5,6 @@ import useVirtual from "react-cool-virtual";
 import ReactLoading from "react-loading";
 import { Toaster, toast } from "react-hot-toast";
 
-import { Header } from "../../components/header";
 import GameInfo from "../../components/gameInfo";
 import { UserReview } from "../../components/userReview";
 import { AuthenticationContext } from "../../context/AuthentionContext";

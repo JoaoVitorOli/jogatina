@@ -7,8 +7,6 @@ import ReactLoading from "react-loading";
 
 import { database } from "../../services/firebase";
 
-import { Header } from "../../components/header";
-
 import styles from "./styles.module.scss";
 import "./pagination.css";
 
