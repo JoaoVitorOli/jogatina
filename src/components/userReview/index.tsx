@@ -49,7 +49,7 @@ export function UserReview({
       <div className={styles.markdownHelp}>
         <div>
           <p>
-            Este compo pode usar o Markdown Syntax para padronizar a formatação de texto e deixar sua review mais bonita. <a href="https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open" rel="noreferrer" target="_blank">Click aqui</a> para entender como utilizar.
+            Este campo pode usar o Markdown Syntax para padronizar a formatação de texto e deixar sua review mais bonita. <a href="https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open" rel="noreferrer" target="_blank">Click aqui</a> para entender como utilizar.
           </p>
         </div>
       </div>
