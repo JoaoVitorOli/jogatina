@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import { AuthenticationContext } from "../../context/AuthentionContext";
+import { AuthenticationContext } from "../../context/AuthenticationContext";
 
 import styles from "./styles.module.scss";
 

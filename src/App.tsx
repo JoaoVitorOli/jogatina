@@ -2,7 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import { Header } from "./components/header";
 
-import { AuthenticationProvider } from "./context/AuthentionContext";
+import { AuthenticationProvider } from "./context/AuthenticationContext";
 
 import { Routes } from "./routes";
 

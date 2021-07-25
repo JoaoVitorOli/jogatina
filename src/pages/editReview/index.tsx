@@ -4,7 +4,7 @@ import { Toaster, toast } from "react-hot-toast";
 
 import GameInfo from "../../components/gameInfo";
 import { UserReview } from "../../components/userReview";
-import { AuthenticationContext } from "../../context/AuthentionContext";
+import { AuthenticationContext } from "../../context/AuthenticationContext";
 
 import { useReview } from "../../hooks/useReview";
 import { database } from "../../services/firebase";

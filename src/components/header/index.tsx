@@ -4,7 +4,7 @@ import Hamburger from "hamburger-react";
 
 import windowDimensions from "../../hooks/useWindowDimensions";
 
-import { AuthenticationContext } from "../../context/AuthentionContext";
+import { AuthenticationContext } from "../../context/AuthenticationContext";
 
 import { Menu } from "../menu";
 

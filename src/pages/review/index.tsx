@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import GameInfo from "../../components/gameInfo";
 import { Markdown } from "../../components/userReview/components/markdown/Markdown";
 import { StarRatin } from "../../components/userReview/components/StarRating";
-import { AuthenticationContext } from "../../context/AuthentionContext";
+import { AuthenticationContext } from "../../context/AuthenticationContext";
 
 import { useReview } from "../../hooks/useReview";
 
