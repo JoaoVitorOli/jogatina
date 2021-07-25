@@ -35,13 +35,8 @@
   .pagination {
     margin: 0 auto;
   }
-
-  .pagination > li {
-    padding: 1px 0;
-  }
   
   .pagination > li > a {
-    padding: 0 10px;
-    font-size: 12px;
+    padding: 0 14px;
   }
 }

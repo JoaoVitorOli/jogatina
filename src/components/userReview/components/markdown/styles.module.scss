@@ -3,6 +3,11 @@
   white-space: pre-wrap;
   overflow-wrap: break-word;
 
+  img {
+    max-width: 95%;
+    border-radius: 6px;
+  }
+
   > ul > li {
     margin-left: 22px;
   }

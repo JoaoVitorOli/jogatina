@@ -10,6 +10,7 @@
   height: 100vh;
   border-left: 1px solid #818086;
   overflow: hidden;
+  z-index: 10;
 
   .content {
     justify-content: center;
@@ -85,6 +86,7 @@
 @media (max-width: 500px) {
   .container {
     width: 100vw;
+    border-left: 0;
   
     .content {
       margin: 0 auto;
