@@ -44,7 +44,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "commit": "git-cz"
   },
   "eslintConfig": {
     "extends": [
@@ -70,7 +71,14 @@
     "@types/react-modal": "^3.12.1",
     "@types/react-paginate": "^7.1.1",
     "@types/react-router-dom": "^5.1.8",
+    "commitizen": "^4.2.4",
     "cors-anywhere": "^0.4.4",
+    "cz-conventional-changelog": "3.3.0",
     "husky": "^7.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
