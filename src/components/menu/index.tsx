@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
 
 import { AuthenticationContext } from "../../context/AuthenticationContext";
+import { Button } from "../button";
 
 import styles from "./styles.module.scss";
 
@@ -26,10 +26,21 @@ export function Menu({ isMenuOpen, setMenu }: MenuProps) {
               {Object.keys(user).length > 0 && (
                 <div className={styles.logged}>
                   <img src={user.avatar} alt="avatar" />
-                  <Link to="/review/new" onClick={setMenu}>
+                  <Button 
+                    link="/review/new"
+                    color="black"
+                    bgColor="rgb(231, 231, 231)"
+                    click={setMenu}
+                  >
                     Fazer nova review
-                  </Link>
-                  <button onClick={handleLogOut}>logout</button>
+                  </Button>
+                  <Button 
+                    click={handleLogOut}
+                    color="white"
+                    bgColor="rgb(209, 64, 64)"
+                  >
+                    logout
+                  </Button>
                 </div>
               )}
 

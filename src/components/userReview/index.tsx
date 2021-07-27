@@ -4,6 +4,7 @@ import { TextArea } from "./components/textarea/TextArea";
 import { Markdown } from "./components/markdown/Markdown";
 
 import styles from "./styles.module.scss";
+import { Button } from "../button";
 
 interface GamesProps {
   name: string;
@@ -60,13 +61,13 @@ export function UserReview({
         selectedGame={selectedGame}
       />
 
-      <button
-        type="button"
-        onClick={togglePreviewComponenet}
-        className={styles.buttonShowPreview}
+      <Button
+        click={togglePreviewComponenet}
+        color="white"
+        bgColor="#5A50B3"
       >
         {isPreviewOpen ? (<p>Recolher preview</p>) : (<p>Mostrar preview</p>)}
-      </button>
+      </Button>
 
       {isPreviewOpen && (
         <div className={styles.previewBackground}>

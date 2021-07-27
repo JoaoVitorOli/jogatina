@@ -7,6 +7,7 @@ import windowDimensions from "../../hooks/useWindowDimensions";
 import { AuthenticationContext } from "../../context/AuthenticationContext";
 
 import { Menu } from "../menu";
+import { Button } from "../button";
 
 import RammusImg from "../../assets/images/rammus.png";
 
@@ -53,20 +54,31 @@ export function Header() {
             {Object.keys(user).length > 0 && (
               <div className={styles.logged}>
                 <img src={user.avatar} alt="avatar" />
-                <Link to="/review/new">
+                <Button 
+                  link="/review/new"
+                  color="black"
+                  bgColor="rgb(231, 231, 231)"
+                >
                   Fazer nova review
-                </Link>
-                <button onClick={handleLogOut}>logout</button>
+                </Button>
+                <Button 
+                  click={handleLogOut}
+                  color="white"
+                  bgColor="rgb(209, 64, 64)"
+                >
+                  logout
+                </Button>
               </div>
             )}
 
             {Object.keys(user).length === 0 && (
-              <button
-                onClick={signInWithGoogle}
-                className={styles.buttonLoginGithub}
+              <Button
+                click={signInWithGoogle}
+                color="black"
+                bgColor="rgb(231, 231, 231)"
               >
                 login com Google
-              </button>
+              </Button>
             )}
           </>
         )}

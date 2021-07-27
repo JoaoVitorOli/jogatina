@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 
 import styles from "./styles.module.scss";

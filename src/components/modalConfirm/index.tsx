@@ -1,4 +1,5 @@
 import Modal from 'react-modal';
+import { Button } from '../button';
 
 import styles from "./styles.module.scss";
 
@@ -41,8 +42,20 @@ export function ModalConfirm({
       <div className={styles.modalContent}>
         <h1>{text}</h1>
         <div>
-          <button onClick={confirm}>Confirmar</button>
-          <button onClick={closeModal}>Cancelar</button>
+          <Button 
+            click={confirm}
+            color="black"
+            bgColor="rgb(231, 231, 231)"
+          >
+            Confirmar
+          </Button>
+          <Button 
+            click={closeModal}
+            color="white"
+            bgColor="rgb(209, 64, 64)"
+          >
+            Cancelar
+          </Button>
         </div>
       </div>
     </Modal>
